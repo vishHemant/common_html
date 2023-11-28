@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
+<style>
+    body {
+        background-color: rgba(128, 255, 0, 0.349);
+    }
+    .your-class {
+    width: 90%;
+    margin: auto;
+    }
+    .your-class div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="your-class">
+        <div><p>your content-1</p></div>
+        <div><p>your content-2</p></div>
+        <div><p>your content-3</p></div>
+        <div><p>your content-4</p></div>
+        <div><p>your content-5</p></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.your-class').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+
+</html>
